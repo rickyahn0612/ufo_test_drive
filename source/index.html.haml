@@ -1,0 +1,112 @@
+#countdown-landing-page
+  = link_to 'http://ironridge.com' do 
+    = image_tag('ir_logo.png', class: 'ir_logo')
+  #ufo-container
+    .tag-line
+  #info-container
+    .row
+      .col-md-4
+      .col-md-4
+        = link_to '#ufo-form' do 
+          #form-popup.ufo-button{style: 'font-size: 40px;'}
+            Test Drive a UFO
+      .col-md-4
+
+#notify-form
+  .form-container
+    #ufo-close-button
+      X
+    %h3 Where would you like your UFO to land?
+    %br
+    %form 
+      .row
+        .form-group.required
+          .col-md-6
+            %label.control-label First Name
+            %input.form-control
+          .col-md-6
+            %label.control-label Last Name
+            %input.form-control
+      .row
+        .form-group.required
+          .col-md-12
+            %label.control-label Email
+            %input.form-control
+      .row
+        .form-group.required
+          .col-md-12
+            %label.control-label Company
+            %input.form-control
+      .row
+        .form-group.required
+          .col-md-6
+            %label.control-label City
+            %input.form-control
+          .col-md-6
+            %label.control-label State/Province
+            %select.form-control
+              %option --None--
+              %option{:value => "AL"} Alabama
+              %option{:value => "AK"} Alaska
+              %option{:value => "AZ"} Arizona
+              %option{:value => "AR"} Arkansas
+              %option{:value => "CA"} California
+              %option{:value => "CO"} Colorado
+              %option{:value => "CT"} Connecticut
+              %option{:value => "DE"} Delaware
+              %option{:value => "DC"} District Of Columbia
+              %option{:value => "FL"} Florida
+              %option{:value => "GA"} Georgia
+              %option{:value => "HI"} Hawaii
+              %option{:value => "ID"} Idaho
+              %option{:value => "IL"} Illinois
+              %option{:value => "IN"} Indiana
+              %option{:value => "IA"} Iowa
+              %option{:value => "KS"} Kansas
+              %option{:value => "KY"} Kentucky
+              %option{:value => "LA"} Louisiana
+              %option{:value => "ME"} Maine
+              %option{:value => "MD"} Maryland
+              %option{:value => "MA"} Massachusetts
+              %option{:value => "MI"} Michigan
+              %option{:value => "MN"} Minnesota
+              %option{:value => "MS"} Mississippi
+              %option{:value => "MO"} Missouri
+              %option{:value => "MT"} Montana
+              %option{:value => "NE"} Nebraska
+              %option{:value => "NV"} Nevada
+              %option{:value => "NH"} New Hampshire
+              %option{:value => "NJ"} New Jersey
+              %option{:value => "NM"} New Mexico
+              %option{:value => "NY"} New York
+              %option{:value => "NC"} North Carolina
+              %option{:value => "ND"} North Dakota
+              %option{:value => "OH"} Ohio
+              %option{:value => "OK"} Oklahoma
+              %option{:value => "OR"} Oregon
+              %option{:value => "PA"} Pennsylvania
+              %option{:value => "RI"} Rhode Island
+              %option{:value => "SC"} South Carolina
+              %option{:value => "SD"} South Dakota
+              %option{:value => "TN"} Tennessee
+              %option{:value => "TX"} Texas
+              %option{:value => "UT"} Utah
+              %option{:value => "VT"} Vermont
+              %option{:value => "VA"} Virginia
+              %option{:value => "WA"} Washington
+              %option{:value => "WV"} West Virginia
+              %option{:value => "WI"} Wisconsin
+              %option{:value => "WY"} Wyoming
+      .row
+        .col-md-6
+          .form-group.required
+            %label.control-label Zip
+            %input.form-control
+        .col-md-6
+      .row
+        .col-md-12
+          %br
+          = link_to '#' do 
+            .ufo-button{style: 'font-weight: bold;'}
+              Submit
+#ufo-overlay
