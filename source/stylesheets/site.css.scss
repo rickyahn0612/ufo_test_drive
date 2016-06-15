@@ -125,6 +125,7 @@ html, body{
 }
 
 #notify-form {
+  box-shadow: 3px 3px 1px #666;
   display: none;
   background: white;
   position: absolute;
@@ -145,6 +146,7 @@ html, body{
     padding: 20px 10px;
 
     #ufo-close-button {
+      box-shadow: 1px 1px 1px #666;
       background: #1074BA;
       font-weight: bold;
       line-height: 25px;
@@ -158,6 +160,7 @@ html, body{
 
       &:hover {
         cursor: pointer;
+        background: darken(#1074BA, 10%);
       }
     }
 
@@ -197,16 +200,3 @@ html, body{
   top: 0;
   opacity: 0.50;
 }
-
-/*@media(max-width:767px) { */
-  /*#notify-form {*/
-    /*width: 340px;*/
-  /*}*/
-/*}*/
-
-/*@media(max-height: 719px) {*/
-  /*#notify-form {*/
-    /*bottom: 0;*/
-    /*overflow: scroll*/
-  /*}*/
-/*}*/
